@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles-slides.css">
+  
+  <title>Frontend Mentor | Galleria slideshow site</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+
+      <nav class="navigation">
+        <a href="../index.html">
+          <img src="../assets/shared/logo.svg" alt="logo" class="logo">
+        </a>
+        <a href="../index.html" class="link-1">Stop slideshow</a>
+      </nav>
+
+    </header>
+
+    <main class="slide-main">
+
+      <div class="slide-img">
+        
+        <img src="../assets/guernica/hero-large.jpg" alt="guernica" class="hero-large">
+        <img src="../assets/guernica/hero-small.jpg" alt="guernica" class="hero-small">
+      
+        <div class="title">
+          <h1>Guernica</h1>
+          <p>Pablo Picasso</p>
+        </div>
+
+        <div class="author author-3">
+          <img src="../assets/guernica/artist.jpg" alt="image of author" class="author-img">
+        </div>
+
+        <button class="open-img-btn">
+          <img src="../assets/shared/icon-view-image.svg" alt="open-icon">
+          View image
+        </button>
+
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-img-btn">close</span>
+            <img src="../assets/guernica/gallery.jpg" alt="guernica" class="modal-img">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slide-text">
+
+        <span class="display">
+          1937
+        </span>
+        <p>
+          The scene occurs within a room where, on the left, a wide-eyed bull stands over 
+          a grieving woman holding a dead child in her arms. In the center of the room a 
+          horse falls in agony with a large gaping hole in its side, as if it had just been 
+          run through by a spear or javelin. The horse appears to be wearing chain mail 
+          armor, decorated with vertical tally marks arranged in rows. A dead and dismembered 
+          soldier lies under the horse. The hand of his severed right arm grasps a shattered 
+          sword, from which a flower grows.
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/Guernica_(Picasso)">Go to source</a>
+      </div>
+
+    </main>
+
+    <footer class="navigation footer-nav">
+
+      <div class="author-group">
+        <h6>Guernica</h6>
+        <span class="block">Pablo Picasso</span>
+      </div>
+      
+      <div class="link-group">
+        <a href="../html/girl-with-pearl-earring.html" class="link-a"><img src="../assets/shared/icon-back-button.svg" alt="arrow back" class="link-back"></a>
+        <a href="../html/penitent-magdalene.html" class="link-a"><img src="../assets/shared/icon-next-button.svg" alt="arrow next" class="link-next"></a>
+        <a href="../html/starry-night.html" class="link-b"><img src="../assets/shared/icon-back-button.svg" alt="arrow back" class="link-back"></a>
+        <a href="../html/the-storm-on-the-sea-of-galilee.html" class="link-b"><img src="../assets/shared/icon-next-button.svg" alt="arrow next" class="link-next"></a>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #000000;
+    --paragraph: #7D7D7D;
+    --light-text: #E5E5E5;
+    --display: #F3F3F3;
+    --background: #FFFFFF;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.875rem;
+    color: var(--paragraph);
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.display {
+    font-size: 12.5rem;
+    color: var(--display);
+    line-height: 150px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--text);
+    line-height: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--text);
+    line-height: 29px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.125rem;
+    color: var(--text);
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.subheading-1 {
+    font-size: 0.9375rem;
+    color: var(--text);
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.subheading-2 {
+    font-size: 0.8125rem;
+    color: var(--text);
+    line-height: 17px;
+    font-weight: 700;
+}
+
+.link-1 {
+    font-size: 0.75rem;
+    color: var(--paragraph);
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+.link-1:hover {
+    color: var(--text);
+    transition: .2s;
+}
+
+.link-2 {
+    font-size: 0.5625rem;
+    color: var(--paragraph);
+    line-height: 11px;
+    font-weight: 700;
+}
+
+
+/*****----- container layout -----*****/
+
+
+.container {
+    padding: 2.5rem;
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--light-text);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery-main {
+    padding-top: 2.5rem;
+    columns: 4;
+    column-gap: 2.5rem;
+}
+
+figure {
+    position: relative;
+    width: 100%;
+    max-width: 310px;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+}
+
+figure:hover {
+    cursor: pointer;
+}
+
+figure:hover img {
+    opacity: 0.6;
+    transition: .3s;
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    color: var(--background);
+    font-size: 24px;
+    padding: 1rem 3rem 1.7rem 1.7rem;
+    background: linear-gradient(rgba(0,130,170,0),rgb(44, 46, 46));
+}
+
+.block {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#f-12,
+#f-13,
+#f-14,
+#f-15 {
+    margin-bottom: 0px;
+}
+
+#f-7  {
+    margin-bottom: 3rem;
+}
+
+.link-a {
+    display: block;
+}
+
+.link-b {
+    display: none;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .gallery-main {
+        max-width: fit-content;
+        margin: auto;
+        columns: 2;
+        column-gap: 2rem;
+    }
+
+    figure {
+        max-width: 324px;
+    }
+
+    .link-a {
+        display: none;
+    }
+
+    .link-b {
+        display: block;
+    }
+
+    figure,
+    #f-7,
+    #f-12,
+    #f-13,
+    #f-14 {
+        margin-bottom: 2rem;
+    }
+
+    #f-15 {
+        margin-top: 2.2rem;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .header {
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        max-width: 113px;
+    }
+
+    .link-1 {
+        font-size: 0.56rem;
+    }
+
+    .gallery-main {
+        max-width: fit-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    figure,
+    #f-7,
+    #f-12,
+    #f-13,
+    #f-14 {
+        margin-bottom: 0;
+    }
+
+    #f-15 {
+        margin-top: 0;
+    }
+
+    figure {
+        max-width: 327px;
+    }
+
+    #f-2 { order: 2; }
+    #f-3 { order: 3; }
+    #f-4 { order: 4; }
+    #f-5 { order: 5; }
+    #f-6 { order: 6; }
+    #f-7 { order: 7; }
+    #f-8 { order: 8; }
+    #f-9 { order: 9; }
+    #f-10 { order: 10; }
+    #f-11 { order: 11; }
+    #f-12 { order: 12; }
+    #f-13 { order: 13; }
+    #f-14 { order: 14; }
+    #f-15 { order: 15; }
+
+    .link-a {
+        display: block;
+    }
+
+    .link-b {
+        display: none;
+    }
+}

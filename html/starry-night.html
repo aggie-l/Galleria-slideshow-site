@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles-slides.css">
+  
+  <title>Frontend Mentor | Galleria slideshow site</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+
+      <nav class="navigation">
+        <a href="../index.html">
+          <img src="../assets/shared/logo.svg" alt="logo" class="logo">
+        </a>
+        <a href="../index.html" class="link-1">Stop slideshow</a>
+      </nav>
+
+    </header>
+
+    <main class="slide-main">
+
+      <div class="slide-img">
+        
+        <img src="../assets/starry-night/hero-large.jpg" alt="starry night" class="hero-large">
+        <img src="../assets/starry-night/hero-small.jpg" alt="starry night" class="hero-small">
+
+        <div class="title">
+          <h1>Starry Night</h1>
+          <p>Vincent Van Gogh</p>
+        </div>
+
+        <div class="author author-1">
+          <img src="../assets/starry-night/artist.jpg" alt="image of author" class="author-img">
+        </div>
+
+        <button class="open-img-btn">
+          <img src="../assets/shared/icon-view-image.svg" alt="open-icon">
+          View image
+        </button>
+
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-img-btn">close</span>
+            <img src="../assets/starry-night/gallery.jpg" alt="starry night" class="modal-img">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slide-text">
+
+        <span class="display">
+          1889
+        </span>
+        <p>
+          Although The Starry Night was painted during the day in Van Gogh's ground-floor 
+          studio, it would be inaccurate to state that the picture was painted from memory. 
+          The view has been identified as the one from his bedroom window, facing east, a 
+          view which Van Gogh painted variations of no fewer than twenty-one times, including 
+          The Starry Night. "Through the iron-barred window," he wrote to his brother, Theo, 
+          around 23 May 1889, "I can see an enclosed square of wheat ... above which, in the 
+          morning, I watch the sun rise in all its glory."
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/The_Starry_Night">Go to source</a>
+      </div>
+
+    </main>
+
+    <footer class="navigation footer-nav">
+
+      <div class="author-group">
+        <h6>Starry Night</h6>
+        <span class="block">Vincent Van Gogh</span>
+      </div>
+      
+      <div class="link-group">
+        <a href="#" class="disabled"><img src="../assets/shared/icon-back-button.svg" alt="arrow back" class="link-back"></a>
+        <a href="../html/girl-with-pearl-earring.html" class="link-a"><img src="../assets/shared/icon-next-button.svg" alt="arrow next" class="link-next"></a>
+        <a href="../html/guernica.html" class="link-b"><img src="../assets/shared/icon-next-button.svg" alt="arrow next" class="link-next"></a>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
